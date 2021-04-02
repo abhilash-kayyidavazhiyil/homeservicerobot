@@ -134,6 +134,10 @@ include_directories(
 add_executable(${PROJECT_NAME}_node src/add_markers.cpp)
 add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
+
+add_executable(${PROJECT_NAME}_ind_node src/add_markers_node.cpp)
+add_dependencies(${PROJECT_NAME}_ind_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -146,6 +150,10 @@ add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catk
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(${PROJECT_NAME}_node
+  ${catkin_LIBRARIES}
+)
+
+target_link_libraries(${PROJECT_NAME}_ind_node
   ${catkin_LIBRARIES}
 )
 
