@@ -8,6 +8,8 @@
 3. turtlebot_rviz_launchers(https://github.com/turtlebot/turtlebot_interactions) : it is used for visualizing robot in rviz
 4. turtlebot_gazebo(https://github.com/turtlebot/turtlebot_simulator)            : it contains the required files for the gazebo
 
+### Details described at file packages_explain.md 
+
 ## instructions for running
 
 - to test slam
